@@ -103,7 +103,6 @@
  The Half Naked Truth  
  Georgia Rule  
  A Summer in Genoa  
- Alone in the Dark  
  Bullet Boy  
  Lucy  
  Scattering Dad  
@@ -193,7 +192,6 @@
  Oxford Blues  
  Detroit 9000  
  Robot Jox  
- Hold Your Man  
  It Runs in the Family  
  Attack of the Super Monsters  
  Incoming Freshmen  
@@ -301,7 +299,6 @@
  Provocateur  
  This House Possessed  
  Evil Breed: The Legend of Samhain  
- Inspector Gadget's Last Case: Claw's Revenge  
  8 ½ Women  
  The Other  
  It Should Happen to You  
@@ -387,7 +384,7 @@
  Pacific Rendezvous  
  The Case of the Whitechapel Vampire  
  Invasion of the Star Creatures  
- 
+ The Proud and the Beautiful  
  Hamlet  
  "Amazing Stories"  
  The Cobweb  
@@ -397,7 +394,7 @@
  Over Her Dead Body  
  Marley & Me  
  Another Man's Poison  
- 
+ Fighting Caravans  
  Hardgore  
  Gentlemen Prefer Blondes  
  The Girl Next Door  
@@ -429,7 +426,6 @@
  Attack of the Sabertooth  
  Man in a Cocked Hat  
  "According to Jim"  
- Dark Rising: Bring Your Battle Axe  
  Leela  
  The Truth About Love  
  Something Big  
@@ -522,7 +518,6 @@
  The Projected Man  
  S.I.C.K. Serial Insane Clown Killer  
  Thanks of a Grateful Nation  
- 1st to Die  
  Moby Dick  
  Lady Death  
  Waking Up in Reno  
@@ -655,7 +650,6 @@
  "MADtv"  
  "Night Gallery" The House/Certain Shadows on the Wall (1970) 
  Just Cause  
- Officer Down  
  Les aimants  
  The Wedding Date  
  Casanova Brown  
@@ -673,14 +667,14 @@
  The Blood Shed  
  Blonde and Blonder  
  A Connecticut Yankee in King Arthur's Court  
- 
+ Thicker Than Water  
  Spirit: Stallion of the Cimarron  
  The Lost Battalion  
  Night of the Living Bread  
- 
+ Areumdawoon sheejul  
  Arahan  
  Cheech and Chong's Next Movie  
- 
+ Big Meat Eater  
  Black Noon  
  Woodchipper Massacre  
  A Christmas Carol  
@@ -729,7 +723,7 @@
  Cabin Fever  
  Rooms for Tourists  
  High Heels  
- 
+ The Bagman  
  Drawing Restraint 9  
  Vivah  
  The Lion Man  
@@ -737,14 +731,14 @@
  Farewell, Friend  
  Zandalee  
  Slaughterhouse Rock  
- 
+ Terminator Woman  
  One Missed Call  
  Not on the Lips  
  Plan B  
  Bloodsuckers  
  The Great Train Robbery  
  Scary Movie 3  
- 
+ Out on a Limb  
  World's Finest  
  Ben & Arthur  
  Scoop  
@@ -771,11 +765,10 @@
  Cold Heaven  
  Revolt of the Zombies  
  Cosas que hacen que la vida valga la pena  
- The Omega Code  
  National Lampoon's European Vacation  
  Waqt: The Race Against Time  
  "The New Batman Adventures"  
- 
+ Shinobi: Heart Under Blade  
  Slither  
  National Treasure  
  La sierra  
@@ -791,7 +784,7 @@
  Made Men  
  102 Dalmatians  
  "Mama Flora's Family"  
- 
+ The Day of the Locust  
  Party Girl  
  She's Out of My League  
  Funky Forest: The First Contact  
@@ -848,7 +841,6 @@
  "Star Trek: The Next Generation" The Outrageous Okona (1988) 
  The Young Graduates  
  The Goebbels Experiment  
- Entrails of a Virgin  
  Grand Slam  
  "Columbo" Old Fashioned Murder (1976) 
  Monster in the Closet  
@@ -905,7 +897,7 @@
  Doctor Hackenstein  
  "3 Non-Blondes"  
  The Invader  
- 
+ The Underground Comedy Movie  
  Back to Back  
  Love to Kill  
  The Corpse Grinders 2  
@@ -927,21 +919,21 @@
  Gunslinger  
  Farligt förflutet  
  Until They Sail  
- 
+ The Last Wave  
  The Hills Have Eyes II  
  Men in White  
  House of Angels  
  A Love Divided  
  The House Next Door  
- 
+ Alex l'ariete  
  "Agatha Christie's Poirot" Hickory Dickory Dock (1995) 
  The Beaver Trilogy  
- 
+ Tarzan the Ape Man  
  "The New Adventures of Robin Hood"  
  Can I Do It 'Till I Need Glasses?  
  Psycho II  
  Election  
- 
+ Moonbase  
  Dracula II: Ascension  
  Tremors 4: The Legend Begins  
  "Coming Home"  
@@ -952,7 +944,7 @@
  Happy Birthday to Me  
  The Color Purple  
  This Is Not a Love Song  
- 
+ Club Vampire  
  Exorcismo  
  There Goes My Baby  
  Blood Surf  
@@ -989,7 +981,6 @@
  The Wicker Man  
  Teachers  
  "Swiss Family Robinson"  
- "Romeo!"  
  Pokémon 3: The Movie  
  The Killer Within Me  
  Protégé  
@@ -1121,7 +1112,6 @@
  The Order  
  Nightmare in Badham County  
  Blue Desert  
- Miami Golem  
  Christopher Strong  
  Conceiving Ada  
  "The Lion, the Witch, & the Wardrobe"  
@@ -1240,7 +1230,6 @@
  Two-Faced Woman  
  Ready, Steady, Charlie!  
  Fiorile  
- Jack Slade  
  In Which We Serve  
  She Fought Alone  
  Zero Day  
@@ -1347,13 +1336,13 @@
  Curly Sue  
  Dr. Jekyll and Mr. Hyde  
  Jane and the Lost City  
- 
+ Caught in the Draft  
  Ice Bound  
  Evening  
  Broken Arrow  
  Gardens of the Night  
  Intensive Care  
- 
+ "Battlestar Galactica" Daybreak: Part 2 & 3 (2009) 
  "Kerching!"  
  The House on Carroll Street  
  Banjo-Kazooie  
@@ -1395,7 +1384,6 @@
  The House That Dripped Blood  
  The Peterville Diamond  
  Game of Death II  
- To Paris with Love  
  13 Gantry Row  
  Slackers  
  McBain  
@@ -1475,7 +1463,6 @@
  "The Company"  
  Lifepod  
  Superman II: The Richard Donner Cut  
- 
  Vuxna människor  
  Sugar & Spice  
  Mutiny on the Buses  
@@ -1485,37 +1472,37 @@
  McCabe & Mrs. Miller  
  All Over the Guy  
  Walking Tall Part II  
- 
+ It's All Gone Pete Tong  
  The Magic of Lassie  
- 
- 
+ "Scooby-Doo and Scrappy-Doo"  
+ In Old Oklahoma  
  Cracked Nuts  
  Transylvania 6-5000  
  The Bonfire of the Vanities  
- 
+ Iberia  
  I Am Trying to Break Your Heart  
- 
+ Rudolph and Frosty's Christmas in July  
  Falling from the Sky: Flight 174  
- 
+ Europa  
  The Flag of Humanity  
  Big City Blues  
  Ashanti  
  De grot  
  Camille 2000  
- 
- 
+ Meu Tio Matou um Cara  
+ Panic  
  13 Going on 30  
  Yes, Giorgio  
  White Chicks  
  Men of Honor  
  Harvie Krumpet  
- 
- 
+ Watership Down  
+ Cold Winter Sun  
  Movie Madness  
- 
+ I'm Not Rappaport  
  Marilyn Hotchkiss' Ballroom Dancing & Charm School  
  Starlight  
- 
+ "Private Practice"  
  Zombie Nation  
  El pasado  
  Vampyres  
@@ -1607,7 +1594,6 @@
  The Last Ten Days  
  Elephants Dream  
  K-911  
- Parinda  
  The Day Reagan Was Shot  
  Syriana  
  Serum  
@@ -1624,7 +1610,7 @@
  Now and Forever  
  Escape Velocity  
  Stella Dallas  
- 
+ Yugoslavia: The Avoidable War  
  After Dark, My Sweet  
  Ship Ahoy  
  "Nuremberg"  
@@ -1647,11 +1633,11 @@
  Slums of Beverly Hills  
  Awake  
  Hitokiri  
- 
+ Origin: Spirits of the Past  
  The Day Time Ended  
  Nightwish  
  Without You I'm Nothing  
- 
+ Chica de Río  
  The Merry Widow  
  Premiers désirs  
  Murder by Numbers  
@@ -1674,11 +1660,11 @@
  Two Harbors  
  The Bonesetter  
  Secrets & Lies  
- 
+ The St. Louis Bank Robbery  
  Le petit lieutenant  
  Space Amoeba  
  Cinderella  
- 
+ The Unseen  
  Zatôichi  
  Side Sho  
  New Best Friend  
@@ -1718,7 +1704,6 @@
  Searchers 2.0  
  Creature Unknown  
  Up Against Them All  
- Hamlet  
  2103: The Deadly Wake  
  Grand Canyon  
  March or Die  
@@ -1737,7 +1722,7 @@
  Rapturious  
  The Soul of a Man  
  Head Above Water  
- 
+ Peter & the Wolf  
  The Captives  
  Look Both Ways  
  Kissing on the Mouth  
@@ -1826,7 +1811,6 @@
  The Ramrodder  
  "Last Comic Standing"  
  Karate Kiba  
- David and Bathsheba  
  Riders to the Stars  
  "Star Trek" Is There in Truth No Beauty? (1968) 
  10 Items or Less  
@@ -1841,7 +1825,7 @@
  Nightmare  
  City of Joy  
  Congorilla  
- 
+ America's Sweethearts  
  "Robotech"  
  Diary of a Country Priest  
  Littleman  
@@ -1849,23 +1833,23 @@
  Bubble  
  The Dirty Dozen: The Fatal Mission  
  Nana  
- 
+ Redline  
  Forrest Gump  
  "Teamo Supremo"  
- 
- 
+ The Land That Time Forgot  
+ Rappin'  
  "Moonlighting"  
- 
+ Crippled Creek  
  Her Cardboard Lover  
  Rambo: First Blood Part II  
  Raising Victor Vargas  
- 
+ The Guys  
  Where Are My Children?  
  "Beast Wars: Transformers"  
  The Nude Vampire  
  The Hypothesis of the Stolen Painting  
  X-Men Origins: Wolverine  
- 
+ Two Guys Talkin' About Girls  
  Tyson  
  Wild Tigers I Have Known  
  The Announcement  
@@ -1874,17 +1858,17 @@
  My Favorite Season  
  The Emperor's New Clothes  
  Prosperity  
- 
+ Winner Takes All  
  "Bridget Loves Bernie"  
  Night of Terror  
- 
+ Bolt  
  The Power of Kangwon Province  
  The Mermaid Chair  
  Annie: A Royal Adventure!  
  Bonhoeffer: Agent of Grace  
  Killer Workout  
  I guerrieri dell'anno 2072  
- 
+ Private Teacher  
  The Necro Files  
  Soldier Blue  
  Rabbit Test  
@@ -1893,14 +1877,14 @@
  "Son of the Dragon"  
  Dead & Buried  
  Out of Sight  
- 
+ The Week That Girl Died  
  Virginia City  
- 
- 
- 
+ Faithful  
+ Tigerland  
+ Second to Die  
  A Cry in the Wild  
  A Perfect Son  
- 
+ Pandemonium  
  Seven Women for Satan  
  Bleed  
  Running Out of Time 2  
@@ -1909,15 +1893,15 @@
  3 Ninjas  
  The Sentinel  
  Brigham Young  
- 
- 
+ Dead Letter Office  
+ Revenge  
  Lurking Terror  
  Get on the Bus  
- 
+ Czech Dream  
  Gen  
  Collier & Co.  
- 
- 
+ Too Much Flesh  
+ BASEketball  
  Captivity  
  Tumbleweeds  
  United  
@@ -1960,7 +1944,6 @@
  Hamlet  
  House of Games  
  Thumbtanic  
- Carlos Mencia: No Strings Attached  
  Garasu no nô  
  Guilty as Sin  
  Soul Survivors  
@@ -2047,7 +2030,7 @@
  "Waking the Dead"  
  Scarface  
  House of Horrors  
- 
+ The Night Strangler  
  All Dogs Go to Heaven  
  Alienator  
  Creepshow 2  
@@ -2072,11 +2055,10 @@
  The Yearling  
  The Great Alligator  
  The Nutcracker  
- Death Smiles on a Murderer  
- 
+ "Johnny Test"  
  A Dog of Flanders  
  Fay Grim  
- 
+ A Pure Formality  
  The Big Sky  
  What's the Matter with Helen?  
  The Cariboo Trail  
@@ -2130,7 +2112,6 @@
  Silent Night  
  Hi, Mom!  
  "Cleopatra"  
- Power  
  The Dentist  
  Cord  
  Blue Monkey  
@@ -2226,7 +2207,6 @@
  Moon Child  
  "Directors Commentary"  
  The Stone Boy  
- Zyzzyx Rd  
  Washington Square  
  The Incredible Hulk  
  Blood of the Samurai  
@@ -2348,7 +2328,6 @@
  Beijing Rocks  
  Pipe Dream  
  April Love  
- Dillinger  
  The Lonely Lady  
  Femme Fatale  
  "The Apprentice"  
@@ -2417,7 +2396,6 @@
  "The World of Stainboy"  
  Rosalie Goes Shopping  
  The Munsters' Revenge  
- Keiko Mask  
  Jigsaw  
  Diary of a Sex Addict  
  Antitrust  
@@ -2473,12 +2451,13 @@
  Sans Kapiyi Kirinca  
  Rulers of the City  
  A Good Baby  
- 
+ The Cat's Meow  
  Buddy  
  American Psycho  
  "True Blood"  
  The Fiendish Plot of Dr. Fu Manchu  
- Silk Hope   Big House, U.S.A.  
+ Silk Hope  
+ Big House, U.S.A.  
  The Brain That Wouldn't Die  
  The Tango Lesson  
  The Winter War  
@@ -2513,7 +2492,6 @@
  Dream Machine  
  Freeway  
  Stella  
- $  
  Gun Crazy: Episode 1 - A Woman from Nowhere  
  The Shooter  
  1776  
@@ -2571,7 +2549,6 @@
  Timecop: The Berlin Decision  
  Thinner  
  The Bamboo House of Dolls  
- Good Night, Nurse!  
  Top Hat  
  The Telephone Book  
  "The Oprah Winfrey Show"  
@@ -2581,26 +2558,105 @@
  The Crater Lake Monster  
  East of Shanghai  
  "Agatha Christie's Poirot" Murder in Mesopotamia (2001) 
- 
- 
+ Shikoku  
+ The Cowboy and the Lady  
  Meet the People  
  "The League of Gentlemen"  
- 
+ The Wedding Curse  
  Orca  
- 
+ Doctor Mordrid  
  Quo Vadis, Baby?  
  Brotherly Love  
  Three Seasons  
  Life Begins  
- 
- 
+ There's Something About Mary  
+ A Secret Between Friends: A Moment of Truth Movie  
  Perfect Parents  
  What Is It?  
  Dragons: A Fantasy Made Real  
- 
+ Dark Remains  
+ "Entertainment Tonight"  
+ Summer Holiday  
+ Buddy  
+ Boom!  
+ Flying  
+ Love Is All There Is  
+ The Triumph of Love  
+ "Airwolf"  
+ Facing the Giants  
+ "Cuentos de Borges" Death and the Compass (1992) 
+ The Great Mouse Detective  
+ Ants!  
+ "Loonatics Unleashed"  
+ Peaches  
+ The Pink Chiquitas  
+ The Long Day Closes  
+ Modern Romance  
+ Double Indemnity  
+ The Wooden Horse  
+ Loners  
+ Sometimes a Hero  
+ In the Name of the People  
+ Just One of the Girls  
+ Broken Bridges  
+ The Eternal Jew  
+ The War of the Worlds  
+ Wuthering Heights  
+ Royal Flash  
+ Legiunea straina  
+ Algie, the Miner  
+ "The Twilight Zone" The Lonely (1959) 
+ Balance  
+ "Foster's Home for Imaginary Friends"  
+ Natural Enemy  
+ Myra Breckinridge  
+ The Perils of Pauline  
+ Hell Riders  
+ Voice of the Whistler  
+ Man's Castle  
+ Zu Warriors  
+ 2003 MTV Movie Awards  
+ Target of Opportunity  
+ Altered  
+ A Lost Lady  
+ Monster House  
+ The Lost Jungle  
+ Mitchellville  
+ Return to Snowy River  
+ The BFG  
+ Jesse James  
+ Pecker  
+ EPCOT Center: The Opening Celebration  
+ The Little Mermaid 2: Return to the Sea  
+ Sunshine  
+ The Woman in Black  
+ Future Shock  
+ Blithe Spirit  
+ Surviving the Game  
+ Los Debutantes  
+ "The Jane Show"  
+ Goodnight, Mister Tom  
+ My Left Foot  
+ The Theory of Flight  
+ "Numb3rs"  
+ A Man Called Sledge  
+ The Grudge  
+ Artemisia  
+ Love's Abiding Joy  
+ Return to Glennascaul  
+ The Choke  
+ Who's Your Daddy?  
+ "Lancer"  
+ I.Q.  
+ Au Pair Girls  
+ The Private Affairs of Bel Ami  
+ Acting on Impulse  
+ "Veronica Mars"  
+ The Return of the Evil Dead  
+ The American President  
+ Du Barry Was a Lady  
  Zombie '90: Extreme Pestilence  
  Fatal Fury: The Motion Picture  
- The Girl from Missouri  
  Under the Sun of Satan  
  My 5 Wives  
  Time Changer  
@@ -2706,7 +2762,6 @@
  "I Love New York"  
  Cyborg 3: The Recycler  
  The Further Adventures of Tennessee Buck  
- Cut  
  Cyber-Tracker 2  
  Lafayette Escadrille  
  Birthday Girl  
@@ -2805,7 +2860,6 @@
  "Inspector Lewis" Reputation (2006) 
  "Barnaby Jones"  
  The Doctor and the Devils  
- Black Ice  
  The Home Front  
  Hollywood Homicide  
  People I Know  
