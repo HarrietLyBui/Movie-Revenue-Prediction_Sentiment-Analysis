@@ -14,7 +14,7 @@ from sets import Set
 movie_sentiment_score = defaultdict(list)
 PATH_TO_URL = '/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/train/urls_neg.txt'
 
-def getMovieName(filename, start, begin):
+def getMovieName(filename):
     i=0
     f= open("urls_neg_train_movie_name.txt","a")
 
@@ -23,7 +23,8 @@ def getMovieName(filename, start, begin):
     	review_id = line.split("/")[4]
         review_ids.add(review_id)
     
-    for id in list(review_ids)[start:begin]:
+    print len(review_ids)
+    for id in list(review_ids)[:]:
     	line = "http://www.imdb.com/title/" + id + "/reviews"
         i+=1
         #print("loading ", i)
@@ -32,6 +33,10 @@ def getMovieName(filename, start, begin):
         title = soup.find('title').get_text()
         title_list = title.split('Reviews')
         print title_list[0]
+        if title_list[0]=="":
+            print i
+            break
+
         f.write(' %s\n' % title_list[0].encode("utf-8"))
         # if i==8740:
         #     break
@@ -40,7 +45,5 @@ def getMovieName(filename, start, begin):
     print("finish")
  
 
-for i in range(1, 34):
-	start = i*80
-	getMovieName(PATH_TO_URL, start, start+ 81)
+getMovieName(PATH_TO_URL)
 #print(movie_sentiment_score['movie'][:,50])
