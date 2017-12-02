@@ -12,13 +12,13 @@ def mapURLStoReview(filename):
 
 	movie_review = {}
 
-	reviews = []
+	reviews = {}
 	index = 0
 	for reviewFile in os.listdir('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/train/neg'):
 		index = int(reviewFile.split("_")[0])
-		reviews.insert(index, reviewFile)
+		reviews[index] = reviewFile
 
-	print reviews
+
 	
 	file = open(filename, 'r')
 	lines = file.read()
@@ -27,12 +27,12 @@ def mapURLStoReview(filename):
 
 
 	allR = {}
-	sz = len(reviews)
-	for i in range(sz):
-		reviewPath = '/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/train/neg/' + reviews[i]
+	
+	for key in reviews:
+		reviewPath = '/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/train/neg/' + reviews[key]
 		file = open(reviewPath, 'r')
 		rev = file.read()
-		allR[i] = rev
+		allR[key] = rev
 		file.close()
 
 	for ct in range(len(allR)):
