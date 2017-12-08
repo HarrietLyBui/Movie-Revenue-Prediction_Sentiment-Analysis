@@ -12,17 +12,17 @@ from sets import Set
 - or scrape data from the website'''
 
 movie_sentiment_score = defaultdict(list)
-PATH_TO_URL = '/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/test/urls_neg.txt'
+PATH_TO_URL = 'C:\\Users\\buihu\\Documents\\2017_2018 Umass Amherst\\Intro to NLP\\Final project\\Data\\aclImdb_v1\\aclImdb\\train\\urls_neg.txt'
 
 def getMovieName(filename):
     i=0
-    f= open("test_urls_neg_train_movie_name.txt","a")
+    f= open("temp.txt","a")
 
     review_ids = Set()
     for line in open(filename, 'r'):
     	review_id = line.split("/")[4]
         review_ids.add(review_id)
-    
+
     print len(review_ids)
     for id in list(review_ids)[2934:]:
     	line = "http://www.imdb.com/title/" + id + "/usercomments"
@@ -44,7 +44,7 @@ def getMovieName(filename):
         #movie_sentiment_score['movie'].append(title_list[0])
     f.close()
     print("finish")
- 
+
 
 getMovieName(PATH_TO_URL)
 #print(movie_sentiment_score['movie'][:,50])
