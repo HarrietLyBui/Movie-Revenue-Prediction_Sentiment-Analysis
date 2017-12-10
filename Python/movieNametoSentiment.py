@@ -5,6 +5,7 @@ from collections import defaultdict
 from sets import Set
 import os
 import ast
+import csv
 
 
 def movieNametoSentiment():
@@ -151,17 +152,58 @@ def movieNametoSentiment():
 		else:
 			trainMovieNameReviewFile[key] = (posTrainNameReviewFile[key])
 
-	tFilePolScore = {}
+	testMovieNameReviewFile = {}
+
+	for key in negTestNameReviewFile:
+		testMovieNameReviewFile[key] = negTestNameReviewFile[key]
+
+	for key in posTestNameReviewFile:
+		if key in testMovieNameReviewFile:
+			testMovieNameReviewFile[key].append(posTestNameReviewFile[key])
+		else:
+			testMovieNameReviewFile[key] = (posTestNameReviewFile[key])
+
+	trainFilePolScore = {}
+	testFilePolScore = {}
 	# with open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score.txt','r') as inf:
 	# 	dict_from_file = ast.literal_eval(inf.read())
-	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score.txt','r')
+	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score_test_pos.txt','r')
 	polarityScores = filePolScore.read().split('\n')
 	for score in polarityScores:
 		fileScore = score.split(" : ")
-		if fileScore<2:
+		if len(fileScore)<2:
 			continue
-		tFilePolScore[fileScore[0]] = fileScore[1]
+		trainFilePolScore[fileScore[0]] = fileScore[1]
 	filePolScore.close()
+
+	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score_test_neg.txt','r')
+	polarityScores = filePolScore.read().split('\n')
+	for score in polarityScores:
+		fileScore = score.split(" : ")
+		if len(fileScore)<2:
+			continue
+		trainFilePolScore[fileScore[0]] = fileScore[1]
+	filePolScore.close()
+
+	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score_train_neg.txt','r')
+	polarityScores = filePolScore.read().split('\n')
+	for score in polarityScores:
+		fileScore = score.split(" : ")
+		if len(fileScore)<2:
+			continue
+		testFilePolScore[fileScore[0]] = fileScore[1]
+	filePolScore.close()
+
+	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score_train_neg.txt','r')
+	polarityScores = filePolScore.read().split('\n')
+	for score in polarityScores:
+		fileScore = score.split(" : ")
+		if len(fileScore)<2:
+			continue
+		testFilePolScore[fileScore[0]] = fileScore[1]
+	filePolScore.close()
+
+
 
 	trainMovieSentiment = {}
 	testMovieSentiment = {}
@@ -169,9 +211,46 @@ def movieNametoSentiment():
 		reviewFiles = trainMovieNameReviewFile[movie]
 		sentiPolScore = 0
 		for file in reviewFiles:
-			sentiPolScore += tFilePolScore[file]
+			if file not in trainFilePolScore:
+				continue
+			sentiPolScore += float(trainFilePolScore[file])
 		sentiPolScore /= len(reviewFiles)
-		trainMovieSentiment[movie] = sentiPolScore
+		trainMovieSentiment[movie.strip()] = sentiPolScore
+
+	for movie in testMovieNameReviewFile:
+		reviewFiles = testMovieNameReviewFile[movie]
+		sentiPolScore = 0
+		for file in reviewFiles:
+			if file not in testFilePolScore:
+				continue
+			sentiPolScore += float(testFilePolScore[file])
+		sentiPolScore /= len(reviewFiles)
+		testMovieSentiment[movie.strip()] = sentiPolScore	
+
+	movieSentiment = {}
+
+	for movie in trainMovieSentiment:
+		movieSentiment[movie] = trainMovieSentiment[movie]
+	for movie in testMovieSentiment:
+		if movie in movieSentiment:
+			movieSentiment[movie] = (movieSentiment[movie]+testMovieSentiment[movie])/2
+		else:
+			movieSentiment[movie] = testMovieSentiment[movie]
+	movieData = []
+	path = '/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/dataset3.csv'
+	dataset = open(path,'rb')
+	reader = list(csv.reader(dataset))
 
 
+	for movieInfo in reader:
+		movieName = movieInfo[0]
+		#print movieName, trainMovieSentiment[movieName]
+		if movieName in movieSentiment:
+			movieInfo.append(movieSentiment[movieName])
+		movieData.append(movieInfo)
+
+	with open('dataset4.csv', 'a') as csv_file:
+		writer = csv.writer(csv_file)
+		for movie in movieData:
+			writer.writerow(movie)
 movieNametoSentiment()
