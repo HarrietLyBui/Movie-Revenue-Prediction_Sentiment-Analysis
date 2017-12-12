@@ -16,24 +16,24 @@ def movieNametoSentiment():
 	reviewsTestPos = {}
 	index = 0
 
-	for reviewFile in os.listdir('C:\\Users\\buihu\Documents\\2017_2018 Umass Amherst\\Intro to NLP\\Final project\\Data\\aclImdb_v1\\aclImdb\\train\\neg'):
+	for reviewFile in os.listdir('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/train/neg'):
 		index = int(reviewFile.split("_")[0])
 		reviewsTrainNeg[index] = reviewFile
 
-	for reviewFile in os.listdir('C:\\Users\\buihu\Documents\\2017_2018 Umass Amherst\\Intro to NLP\\Final project\\Data\\aclImdb_v1\\aclImdb\\train\\pos'):
+	for reviewFile in os.listdir('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/train/pos'):
 		index = int(reviewFile.split("_")[0])
 		reviewsTrainPos[index] = reviewFile
 
-	for reviewFile in os.listdir('C:\\Users\\buihu\Documents\\2017_2018 Umass Amherst\\Intro to NLP\\Final project\\Data\\aclImdb_v1\\aclImdb\\test\\neg'):
+	for reviewFile in os.listdir('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/test/neg'):
 		index = int(reviewFile.split("_")[0])
 		reviewsTestNeg[index] = reviewFile
 
-	for reviewFile in os.listdir('C:\\Users\\buihu\Documents\\2017_2018 Umass Amherst\\Intro to NLP\\Final project\\Data\\aclImdb_v1\\aclImdb\\test\\pos'):
+	for reviewFile in os.listdir('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/test/pos'):
 		index = int(reviewFile.split("_")[0])
 		reviewsTestPos[index] = reviewFile
 
 
-	movie_url = open('C:\\Users\\buihu\Documents\\2017_2018 Umass Amherst\\Intro to NLP\\Final project\\Data\\aclImdb_v1\\aclImdb\\train\\urls_neg.txt','r')
+	movie_url = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/train/urls_neg.txt','r')
 	movies = movie_url.read().split('\n')
 	movie_url.close()
 	negTrainURLFile = {}
@@ -45,7 +45,7 @@ def movieNametoSentiment():
 			negTrainURLFile[movies[key]] = [reviewsTrainNeg[key]]
 
 
-	movie_url = open('C:\\Users\\buihu\Documents\\2017_2018 Umass Amherst\\Intro to NLP\\Final project\\Data\\aclImdb_v1\\aclImdb\\train\\urls_pos.txt','r')
+	movie_url = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/train/urls_pos.txt','r')
 	movies = movie_url.read().split('\n')
 	movie_url.close()
 	posTrainURLFile = {}
@@ -56,7 +56,7 @@ def movieNametoSentiment():
 		else:
 			posTrainURLFile[movies[key]] = [reviewsTrainPos[key]]
 
-	movie_url = open('C:\\Users\\buihu\Documents\\2017_2018 Umass Amherst\\Intro to NLP\\Final project\\Data\\aclImdb_v1\\aclImdb\\test\\urls_pos.txt','r')
+	movie_url = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/test/urls_pos.txt','r')
 	movies = movie_url.read().split('\n')
 	movie_url.close()
 	posTestURLFile = {}
@@ -67,7 +67,7 @@ def movieNametoSentiment():
 		else:
 			posTestURLFile[movies[key]] = [reviewsTestPos[key]]
 
-	movie_url = open('C:\\Users\\buihu\Documents\\2017_2018 Umass Amherst\\Intro to NLP\\Final project\\Data\\aclImdb_v1\\aclImdb\\test\\urls_neg.txt','r')
+	movie_url = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/test/urls_neg.txt','r')
 	movies = movie_url.read().split('\n')
 	movie_url.close()
 	negTestURLFile = {}
@@ -225,7 +225,7 @@ def movieNametoSentiment():
 				continue
 			sentiPolScore += float(testFilePolScore[file])
 		sentiPolScore /= len(reviewFiles)
-		testMovieSentiment[movie.strip()] = sentiPolScore
+		testMovieSentiment[movie.strip()] = sentiPolScore	
 
 	movieSentiment = {}
 
