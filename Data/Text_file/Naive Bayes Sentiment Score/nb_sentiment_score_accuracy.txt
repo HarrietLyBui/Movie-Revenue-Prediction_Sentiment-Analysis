@@ -1,0 +1,13 @@
+Naive Bayes subtraction method:
+('accuracy_test_pos', 75.96)
+('accuracy_test_neg', 89.92)
+('accuracy_train_pos', 92.792)
+('accuracy_train_neg', 97.96)
+
+Naive Bayes compare and assign method:
+
+('accuracy', 2.04)
+('accuracy_test_pos', 24.04)
+('accuracy_test_neg', 10.08)
+('accuracy_train_pos', 7.208)
+('accuracy_train_neg', 2.04)
