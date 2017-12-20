@@ -16,6 +16,7 @@ def movieNametoSentiment():
 	reviewsTestPos = {}
 	index = 0
 
+	#GET NAMES OF MOVIE REV FILE (WITHOUT RATING) AND STORE THEM IN A LIST INDEXED BY THE DOC NAME
 	for reviewFile in os.listdir('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/train/neg'):
 		index = int(reviewFile.split("_")[0])
 		reviewsTrainNeg[index] = reviewFile
@@ -32,7 +33,7 @@ def movieNametoSentiment():
 		index = int(reviewFile.split("_")[0])
 		reviewsTestPos[index] = reviewFile
 
-
+	#OPEN URL FILE AND STORE EACH URL IN A MOVIES LIST
 	movie_url = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/aclImdb/train/urls_neg.txt','r')
 	movies = movie_url.read().split('\n')
 	movie_url.close()
@@ -163,6 +164,8 @@ def movieNametoSentiment():
 		else:
 			testMovieNameReviewFile[key] = (posTestNameReviewFile[key])
 
+
+	#OPEN FILES WITH SENTIMENT SCORES AND REVIEWS, STORE THEM IN A DICTIONARY WITH KEY IS THE FILE NAME AND VALUE IS THE SCORE
 	trainFilePolScore = {}
 	testFilePolScore = {}
 	# with open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score.txt','r') as inf:
@@ -225,7 +228,7 @@ def movieNametoSentiment():
 				continue
 			sentiPolScore += float(testFilePolScore[file])
 		sentiPolScore /= len(reviewFiles)
-		testMovieSentiment[movie.strip()] = sentiPolScore	
+		testMovieSentiment[movie.strip()] = sentiPolScore
 
 	movieSentiment = {}
 
