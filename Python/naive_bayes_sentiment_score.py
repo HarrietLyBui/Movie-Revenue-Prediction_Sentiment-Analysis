@@ -381,20 +381,6 @@ for label in [POS_LABEL, NEG_LABEL]:
 
 # We have provided a tokenize_doc function in hw_1.py. Here is a short demo of how it works
 
-d1 = "This SAMPLE doc has   words tHat  repeat repeat"
-bow = tokenize_doc(d1)
-
-assert bow['this'] == 1
-assert bow['sample'] == 1
-assert bow['doc'] == 1
-assert bow['has'] == 1
-assert bow['words'] == 1
-assert bow['that'] == 1
-assert bow['repeat'] == 2
-
-bow2 = tokenize_doc("Computer science is both practical and abstract.")
-for b in bow2:
-    print b
 
 nb = NaiveBayes('C:\\Users\\buihu\\Documents\\2017_2018 Umass Amherst\\Intro to NLP\\Final project\\Data\\aclImdb_v1\\aclImdb\\',
                 tokenizer=tokenize_doc)
