@@ -32,7 +32,7 @@ def linear_regression(train_X, train_y, test_X, test_y):
     print 'Linear Regression RMSE : ',math.sqrt(MSE)/1000000,     #Diving the RMSE by 1000000 because the values are in millions
 
 def DT_regression(train_X, train_y, test_X, test_y):
-    selector = SelectKBest(f_regression, k=17)
+    selector = SelectKBest(f_regression)
     selector.fit(train_X, train_y)
     X_train = train_X[:, selector.get_support()]
     X_test = test_X[:, selector.get_support()]
@@ -44,13 +44,14 @@ def DT_regression(train_X, train_y, test_X, test_y):
     print 'Decision Tree Regression RMSE',RMSE/1000000
 
 def elastic_net(train_X, train_y, test_X, test_y):
-    selector = SelectKBest(f_regression, k=17)
+    selector = SelectKBest(f_regression)
     selector.fit(train_X, train_y)
     X_train = train_X[:, selector.get_support()]
     X_test = test_X[:, selector.get_support()]
     clf = ElasticNet()
     clf.fit(X_train, train_y)
     predictions = clf.predict(X_test)
+    print 'Elastic Net Predictions',predictions
     MSE = mean_squared_error(test_y, predictions)
     RMSE = math.sqrt(MSE)
     print 'Elastic Net RMSE : ',RMSE/1000000
@@ -69,7 +70,7 @@ def ridge_regression(train_X, train_y, test_X, test_y):
 
 def main():
     ## Loading the data into python data structures
-    PATH = "C:\CMPSCI585\Project\OurProject\Data\RottenTomatoesData.csv"  # Change the path accordingly
+    PATH = "C:\CMPSCI585\Project\Movie-Revenue-Prediction_Sentiment-Analysis\Data\CSV file\dataset5.csv"  # Change the path accordingly
 
     df = pd.read_csv(PATH, sep=',')
     data = df.values
@@ -81,22 +82,23 @@ def main():
     test_X = df.drop('revenue', axis=1).values[int(0.80 * len_data):]
     test_y = df.iloc[:, -1].values[int(0.80 * len_data):]
     #====================Dividing Budget and revenue by million (1000000)===================
-    # budget_axis = 11
-    # train_X[:,budget_axis] = train_X[:,budget_axis]/1000000
-    # test_X[:,budget_axis] = test_X[:,budget_axis]/1000000
-    # mean_train_budget = np.mean(train_X[:,budget_axis])
-    # mean_test_budget = np.mean(test_X[:,budget_axis])
-    # train_X[:, budget_axis] = train_X[:, budget_axis] - mean_train_budget
-    # test_X[:, budget_axis] = test_X[:, budget_axis] - mean_test_budget
+    budget_axis = 7
+    train_X[:,budget_axis] = train_X[:,budget_axis]/1000000
+    test_X[:,budget_axis] = test_X[:,budget_axis]/1000000
+
+    mean_train_budget = np.mean(train_X[:,budget_axis])
+    mean_test_budget = np.mean(test_X[:,budget_axis])
+    train_X[:, budget_axis] = train_X[:, budget_axis] - mean_train_budget
+    test_X[:, budget_axis] = test_X[:, budget_axis] - mean_test_budget
     #
-    # train_y = train_y/1000000
-    # train_y_mean = np.mean(train_y)
-    # train_y = np.abs(train_y - train_y_mean)
-    # print 'train_y',train_y
-    # test_y = test_y/1000000
-    # test_y_mean = np.mean(test_y)
-    # test_y = np.abs(test_y - test_y_mean)
-    # print 'test_y',test_y
+    train_y = train_y
+    train_y_mean = np.mean(train_y)
+    train_y = np.abs(train_y - train_y_mean)
+    print 'train_y',train_y
+    test_y = test_y
+    test_y_mean = np.mean(test_y)
+    test_y = np.abs(test_y - test_y_mean)
+    print 'test_y',test_y
 
     print train_X.shape
     print train_X.shape
@@ -105,7 +107,7 @@ def main():
     print test_y.shape
 
     #linear_regression(train_X, train_y, test_X, test_y)
-    #DT_regression(train_X, train_y, test_X, test_y)
+    DT_regression(train_X, train_y, test_X, test_y)
     elastic_net(train_X, train_y, test_X, test_y)
 
 
