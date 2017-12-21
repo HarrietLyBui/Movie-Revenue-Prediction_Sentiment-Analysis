@@ -1,4 +1,4 @@
-Movie,IMDB ID,Genre ID,Popularity,Release date,Adult,original language,vote_count,vote average,run time,run budget, revenue,Na•ve Bayes Polarity Scores,
+Movie,IMDB ID,Genre ID,Popularity,Release date,Adult,original language,vote_count,vote average,run time,run budget, revenue,NB Polarity Scores,NB_score_normalize
 Brothers of the Head,16429,"[10402, 18]",1.748908,1/1/2005,FALSE,en,7,6.6,93,0,0,-2.12E-06,-0.211894
 Tickets,57251,"[35, 18]",1.59342,3/25/2005,FALSE,it,8,6,109,0,0,-1.92E-05,-1.92215
 Close to Leo,27093,[18],2.048641,5/18/2002,FALSE,fr,12,5.5,90,0,0,-1.38E-07,-0.0138387
