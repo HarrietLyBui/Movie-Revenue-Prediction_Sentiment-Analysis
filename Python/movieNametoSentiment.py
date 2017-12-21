@@ -80,7 +80,7 @@ def movieNametoSentiment():
 			negTestURLFile[movies[key]] = [reviewsTestNeg[key]]
 
 	negTestUrlName = {}
-	movie_name = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/_urls_neg_test_movie_name_and_url_stop_time.txt','r')
+	movie_name = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/Text_file/_urls_neg_test_movie_name_and_url_stop_time.txt','r')
 	movies = movie_name.read().split('\n')
 	movie_name.close()
 	for movie in movies:
@@ -96,7 +96,7 @@ def movieNametoSentiment():
 
 
 	posTestUrlName = {}
-	movie_name = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/_urls_pos_test_movie_name_and_url_stop_time.txt','r')
+	movie_name = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/Text_file/_urls_pos_test_movie_name_and_url_stop_time.txt','r')
 	movies = movie_name.read().split('\n')
 	movie_name.close()
 	for movie in movies:
@@ -111,7 +111,7 @@ def movieNametoSentiment():
 		posTestNameReviewFile[posTestUrlName[key]] = posTestURLFile[key]
 
 	posTrainUrlName = {}
-	movie_name = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/_urls_pos_train_movie_name_and_url_stop_time.txt','r')
+	movie_name = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/Text_file/_urls_pos_train_movie_name_and_url_stop_time.txt','r')
 	movies = movie_name.read().split('\n')
 	movie_name.close()
 	for movie in movies:
@@ -127,7 +127,7 @@ def movieNametoSentiment():
 
 
 	negTrainUrlName = {}
-	movie_name = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/_urls_neg_train_movie_name_and_url_stop_time.txt','r')
+	movie_name = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/Text_file/_urls_neg_train_movie_name_and_url_stop_time.txt','r')
 	movies = movie_name.read().split('\n')
 	movie_name.close()
 	for movie in movies:
@@ -170,7 +170,7 @@ def movieNametoSentiment():
 	testFilePolScore = {}
 	# with open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score.txt','r') as inf:
 	# 	dict_from_file = ast.literal_eval(inf.read())
-	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score_test_pos.txt','r')
+	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/Text_file/Naive_Bayes_Sentiment_Score/Subtraction_method/nb_train_pos_namefile_sentiment_score.txt','r')
 	polarityScores = filePolScore.read().split('\n')
 	for score in polarityScores:
 		fileScore = score.split(" : ")
@@ -179,7 +179,7 @@ def movieNametoSentiment():
 		trainFilePolScore[fileScore[0]] = fileScore[1]
 	filePolScore.close()
 
-	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score_test_neg.txt','r')
+	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/Text_file/Naive_Bayes_Sentiment_Score/Subtraction_method/nb_train_neg_namefile_sentiment_score.txt','r')
 	polarityScores = filePolScore.read().split('\n')
 	for score in polarityScores:
 		fileScore = score.split(" : ")
@@ -188,7 +188,7 @@ def movieNametoSentiment():
 		trainFilePolScore[fileScore[0]] = fileScore[1]
 	filePolScore.close()
 
-	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score_train_neg.txt','r')
+	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/Text_file/Naive_Bayes_Sentiment_Score/Subtraction_method/nb_test_pos_namefile_sentiment_score.txt','r')
 	polarityScores = filePolScore.read().split('\n')
 	for score in polarityScores:
 		fileScore = score.split(" : ")
@@ -197,7 +197,7 @@ def movieNametoSentiment():
 		testFilePolScore[fileScore[0]] = fileScore[1]
 	filePolScore.close()
 
-	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/movie_reviews_polarity_score_train_neg.txt','r')
+	filePolScore = open('/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/Text_file/Naive_Bayes_Sentiment_Score/Subtraction_method/nb_test_neg_namefile_sentiment_score.txt','r')
 	polarityScores = filePolScore.read().split('\n')
 	for score in polarityScores:
 		fileScore = score.split(" : ")
@@ -207,13 +207,15 @@ def movieNametoSentiment():
 	filePolScore.close()
 
 
-
+	
 	trainMovieSentiment = {}
 	testMovieSentiment = {}
 	for movie in trainMovieNameReviewFile:
 		reviewFiles = trainMovieNameReviewFile[movie]
 		sentiPolScore = 0
 		for file in reviewFiles:
+			if isinstance(file, list):
+				continue
 			if file not in trainFilePolScore:
 				continue
 			sentiPolScore += float(trainFilePolScore[file])
@@ -224,6 +226,8 @@ def movieNametoSentiment():
 		reviewFiles = testMovieNameReviewFile[movie]
 		sentiPolScore = 0
 		for file in reviewFiles:
+			if isinstance(file, list):
+				continue
 			if file not in testFilePolScore:
 				continue
 			sentiPolScore += float(testFilePolScore[file])
@@ -240,7 +244,7 @@ def movieNametoSentiment():
 		else:
 			movieSentiment[movie] = testMovieSentiment[movie]
 	movieData = []
-	path = '/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/dataset3.csv'
+	path = '/Users/Rishi/Desktop/Study/Fall2017/NLP/Project/Movie-Revenue-Prediction_Sentiment-Analysis/Data/CSV_file/dataset3.csv'
 	dataset = open(path,'rb')
 	reader = list(csv.reader(dataset))
 
@@ -252,7 +256,7 @@ def movieNametoSentiment():
 			movieInfo.append(movieSentiment[movieName])
 		movieData.append(movieInfo)
 
-	with open('dataset4.csv', 'a') as csv_file:
+	with open('dataset_nb.csv', 'a') as csv_file:
 		writer = csv.writer(csv_file)
 		for movie in movieData:
 			writer.writerow(movie)
