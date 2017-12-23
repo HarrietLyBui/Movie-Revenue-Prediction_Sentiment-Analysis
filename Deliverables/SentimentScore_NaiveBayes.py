@@ -95,8 +95,7 @@ class NaiveBayes:
     def train_model(self):
         """
         This function processes the entire training set using the global PATH
-        variable above.  It makes use of the tokenize_doc and update_model
-        functions you will implement.
+        variable above.  It makes use of the tokenize_doc and update_model functions
         """
 
         pos_path = os.path.join(self.train_dir, POS_LABEL)
@@ -122,8 +121,6 @@ class NaiveBayes:
 
     def update_model(self, bow, label):
         """
-        IMPLEMENT ME!
-
         Update internal statistics given a document represented as a bag-of-words
         bow - a map from words to their counts
         label - the class of the document whose bag-of-words representation was input
@@ -137,22 +134,15 @@ class NaiveBayes:
         """
         #update times each word was seen
 
-
         for (key, value) in bow.items():
-
             self.class_word_counts[label][key] += value
-
             self.class_total_word_counts[label] += value
-
         #update total tokens in the corresponding label
-
 
         for values in bow.keys():
             self.vocab.add(values)
-
         self.class_total_doc_counts[label] += 1
 
-        pass
 
     def tokenize_and_update_model(self, doc, label):
         """
@@ -268,13 +258,14 @@ class NaiveBayes:
         print('pos prob', prob_doc_in_pos)
         print('neg prob', prob_doc_in_neg)
         sentiment_score = prob_doc_in_pos - prob_doc_in_neg
-        # if prob_doc_in_pos >= prob_doc_in_neg:
-        #     sentiment_score = prob_doc_in_pos
-        # else:
-        #     sentiment_score = -prob_doc_in_neg
-        # return sentiment_score
 
-    def get_sentiment_score_of_data_set(self, bow,alpha, folder, _label, filename):
+        def get_sentiment_score_of_data_set(self, bow,alpha, folder, _label, filename):
+            '''Calculate sentiment score, accuracy of the score:
+                if score > 0 and document is positive -> correct
+                if score < 0 and document is negatve -> correct
+               Write sentiment score to txt
+
+            '''
         pos_path = os.path.join(folder, _label)
         f_label = open(filename ,"w")
         list_score = {}
@@ -287,6 +278,8 @@ class NaiveBayes:
                 bow = self.tokenize_doc(content)
                 classify_result =  self.classify(bow, 1.0)
                 sentiment_score = self.calculate_sentiment_score(bow, 1.0)
+
+                #EVALUATE ACCURACY OF SENTIMENT SCORE
                 if sentiment_score>0 and _label==POS_LABEL :
                     correct+=1
                     print('pos correct', correct)
@@ -302,6 +295,8 @@ class NaiveBayes:
         print('total',total)
         accuracy = 100* correct/total
         print('accuracy', 100* correct/total)
+
+        #WRITE SENTIMENT SCORE TO TXT
         for key, value in list_score.iteritems():
             entry = str(key) + " : " + str(value) + "\n"
             f_label.write(entry)
@@ -391,12 +386,20 @@ if len(nb.vocab) == 252165:
 else:
     print "Oh no! Something seems off. Double check your code before continuing. Maybe a mistake in update_model?"
 
+'''Get sentiment score for each dataset and write them to a txt file
+'''
 accuracy_test_pos = nb.get_sentiment_score_of_data_set(bow, 1.0,TEST_DIR, POS_LABEL, "nb_test_pos_sentiment_score_nosub.txt")
 accuracy_test_neg = nb.get_sentiment_score_of_data_set(bow, 1.0,TEST_DIR, NEG_LABEL, "nb_test_neg_sentiment_score_nosub.txt")
 accuracy_train_pos = nb.get_sentiment_score_of_data_set(bow, 1.0,TRAIN_DIR, POS_LABEL, "nb_train_pos_sentiment_score_nosub.txt")
 accuracy_train_neg = nb.get_sentiment_score_of_data_set(bow, 1.0,TRAIN_DIR, NEG_LABEL, "nb_train_neg_sentiment_score_nosub.txt")
+
+'''Print out accuracy for sentiment score
+'''
 print('accuracy_test_pos', accuracy_test_pos)
 print('accuracy_test_neg', accuracy_test_neg)
 print('accuracy_train_pos', accuracy_train_pos)
 print('accuracy_train_neg', accuracy_train_neg)
+
+'''Print out accuracy for Naive Bayes classificattion
+'''
 print('accuracy', nb.evaluate_classifier_accuracy(1.0))
